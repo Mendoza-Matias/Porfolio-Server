@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "nodemon src/index.js",
+    "build":"npm i"
   },
   "author": "Matias Mendoza",
   "license": "ISC",
