@@ -11,7 +11,9 @@ const app = express()
 
 app.use(express.json())
 app.use(express.urlencoded({extended:false}));
-app.use(cors())
+app.use(cors({
+    origin:["http://localhost:8083","https://porfolio.onrender.com"]
+}))
 //Routes
 app.use(getRoutes);
 app.use(postRoutes);
